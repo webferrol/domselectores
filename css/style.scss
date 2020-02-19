@@ -1,0 +1,109 @@
+@font-face{
+    font-family: encabezado;
+    src: url(../fonts/MeriendaOne-Regular.ttf);
+}
+@font-face{
+    font-family: fuente-negrita;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: fuente;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+:root{
+    font-family: fuente, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body,h1{
+    margin:0;
+}
+
+.main_menu{
+    background-color: rgb(112, 29, 29);
+    h1{
+        font-family: encabezado, sans-serif;
+        color: rgb(230, 220, 220);
+        line-height: 3em;
+        text-align: center;
+    }
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1em;
+    &>*{
+        margin: .5em;
+    }
+}
+
+$altura : 1.5rem;
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    thead{
+        font-family: fuente-negrita,sans-serif;
+    }
+    td,th{
+       
+        height: $altura;
+        border: 1px solid black; 
+    }
+    tbody{
+        th{
+            text-align: left;
+            font-weight: normal;
+        }
+    }
+   
+}
+
+select{
+    padding-left: .5em;
+    margin-left: -.8px;
+    border: 1px solid black;
+    label{
+        display: flex;
+        align-items: center;
+        height: $altura;
+    }
+    select,input{
+        height: $altura;
+        width: 90%;
+    }
+}
+
+.boton{
+    display: inline-block;
+    padding: 0 1rem;
+    line-height: 2rem;
+    color:white;
+    background-color: red;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+
+.ejercicio{
+    padding: 0 .5em .5em .5em;
+    min-height: 10rem;
+    box-shadow: 0 0 2px 0 black inset;
+}
+
+
+@media screen and (max-width: 30.6rem){
+    
+    .tabla_precios,.selector{
+       width: 20rem;
+    }
+    .selector{
+        margin-top: .5em;
+        margin-left: 0;
+        border-left-style: solid;
+    }
+}

@@ -1,0 +1,124 @@
+@font-face {
+  font-family: encabezado;
+  src: url(../fonts/MeriendaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: fuente-negrita;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: fuente;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+:root {
+  font-family: fuente, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, h1 {
+  margin: 0;
+}
+
+.main_menu {
+  background-color: #701d1d;
+}
+
+.main_menu h1 {
+  font-family: encabezado, sans-serif;
+  color: #e6dcdc;
+  line-height: 3em;
+  text-align: center;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1em;
+}
+
+.content > * {
+  margin: .5em;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table thead {
+  font-family: fuente-negrita,sans-serif;
+}
+
+table td, table th {
+  height: 1.5rem;
+  border: 1px solid black;
+}
+
+table tbody th {
+  text-align: left;
+  font-weight: normal;
+}
+
+select {
+  padding-left: .5em;
+  margin-left: -.8px;
+  border: 1px solid black;
+}
+
+select label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1.5rem;
+}
+
+select select, select input {
+  height: 1.5rem;
+  width: 90%;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0 1rem;
+  line-height: 2rem;
+  color: white;
+  background-color: red;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2rem;
+}
+
+.ejercicio {
+  padding: 0 .5em .5em .5em;
+  min-height: 10rem;
+  -webkit-box-shadow: 0 0 2px 0 black inset;
+          box-shadow: 0 0 2px 0 black inset;
+}
+
+@media screen and (max-width: 30.6rem) {
+  .tabla_precios, .selector {
+    width: 20rem;
+  }
+  .selector {
+    margin-top: .5em;
+    margin-left: 0;
+    border-left-style: solid;
+  }
+}
+/*# sourceMappingURL=style.css.map */
